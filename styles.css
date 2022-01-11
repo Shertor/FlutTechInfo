@@ -31,8 +31,10 @@ body {
 
 .Features {
     background-color: #86898f;
-    padding: 15px;
+    padding: 5px;
+    margin-top: 0px;
+    margin-top: 20px;
+
     border: 5px solid black;
-    margin: 20px;
 }
 
