@@ -101,8 +101,9 @@ a:hover {
     /* padding-bottom: 10px; */
 }
 
-.referencies td:nth-child(1), td:nth-child(3){
-    color: #184e77;
+.referencies td:nth-child(1), td:nth-child(2), td:nth-child(3){
+    /* color: #184e77; */
+    text-align: center;
 }
 
 /* .referencies tr:nth-child(even){
