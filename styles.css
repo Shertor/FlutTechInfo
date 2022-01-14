@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+
+
 body {
     background-color: white;
     font-family: 'Quicksand', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -44,6 +50,10 @@ a:hover {
     /* word-spacing: normal; */
 }
 
+.info a {
+    color: #184e77;
+}
+
 .container {
     max-width: 750px;
     margin: auto;
@@ -51,8 +61,8 @@ a:hover {
 
 .features div {
     padding: 15px 20px;
-    background: red;
-    margin-bottom: 20px;
+    background: #dee2e6;
+    margin-bottom: 15px;
     border-radius: 20px;
 }
 .features h4 {
@@ -60,7 +70,41 @@ a:hover {
     padding: 0;
 }
 
+
+.features p {
+    color: #242424;
+    margin: 0;
+    padding: 0;
+}
+
 /* How to center a div */
 /* .box-model > div {
     box-sizing: border-box;
+} */
+
+.list {
+    padding: 0 20px;
+    /* list-style: none; */
+}
+
+.list li {
+    color: #86898f;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.referencies {
+    width: 100%;
+}
+
+.referencies td {
+    /* padding-bottom: 10px; */
+}
+
+.referencies td:nth-child(1), td:nth-child(3){
+    color: #184e77;
+}
+
+/* .referencies tr:nth-child(even){
+    background-color: #dee2e6;
 } */
