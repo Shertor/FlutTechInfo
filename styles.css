@@ -16,6 +16,7 @@ body {
 
 h2 {
     text-align: center;
+    margin-top: 40px;
 }
 
 /* Links */
@@ -82,9 +83,9 @@ a:hover {
 }
 
 .container {
-    max-width: 750px;
+    max-width: 700px;
     margin: auto;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .features div {
@@ -105,11 +106,6 @@ a:hover {
     padding: 0;
 }
 
-/* How to center a div */
-/* .box-model > div {
-    box-sizing: border-box;
-} */
-
 /* List */
 .list {
     list-style-type: none;
@@ -127,18 +123,20 @@ a:hover {
     border-bottom: none;
 }
 
-.list > .list-item:last-child{
+.list > .list-item:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.list > .list-item:last-child {
     border-bottom: 1px solid rgba(0,0,0,.125);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-.list > .list-item:first-child{
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom: none;
-}
+
 
 .list-item a {
+    border: none;
     outline: none;
     text-decoration: none;
     display: inline-block; /* For all line */
@@ -150,7 +148,7 @@ a:hover {
 }
 
 .list-item:hover {
-    background-color: #0d6efd;
+    background-color: #184e77;
 }
 
 .list-item a:hover {
@@ -186,7 +184,7 @@ a:hover {
 .form-group label {
     display: block;
     font-size: 14 px;
-    color: #86898f;
+    color: #000;
 }
 
 .form-group input, .form-group textarea {
@@ -216,12 +214,14 @@ a:hover {
 }
 
 .btn {
-    background: #111;
-    color: #fff;
     border: none;
     font-family: inherit;
     cursor: pointer;
-    padding: 15px 20px;
+    padding: 10px 15px;
+    background-color: #184e77;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
 }
 
 .btn:hover {
@@ -246,3 +246,65 @@ a:hover {
     height: 20px;
     background: lightcoral;
 } */
+
+
+
+.problem-card {
+    max-width: 350px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+    /* margin-bottom: 10px; */
+}
+
+.problem-card .problem-card-img-top {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.problem-card .problem-card-body {
+    font-family: inherit;
+    padding: 10px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.problem-card-body .problem-card-title {
+    font-size: 18px;
+    margin: 0;
+}
+
+.problem-card-body .problem-card-text {
+    font-size: 16px;
+}
+
+.problem-card-body .problem-card-btn {
+    background-color: #184e77;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+.problem-card-body .problem-card-btn:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+
+/* How to center a div */
+.box-model {
+    display: flex;
+}
+
+.box-model > div {
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+.box-model > div:last-child {
+    margin-right: 0px;
+}
