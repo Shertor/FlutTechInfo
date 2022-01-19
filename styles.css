@@ -158,22 +158,22 @@ a:hover {
     color: white;
 }
 
-/* Referencies */
-.referencies {
+/* References */
+.references {
     width: 100%;
 }
 
-.referencies td {
+.references td {
     /* padding-bottom: 10px; */
     border-bottom: 1px solid rgba(0,0,0,.125);
 }
 
-.referencies td:nth-child(1), td:nth-child(2), td:nth-child(3){
+.references td:nth-child(1), td:nth-child(2), td:nth-child(3){
     /* color: #184e77; */
     text-align: center;
 }
 
-/* .referencies tr:nth-child(even){
+/* .references tr:nth-child(even){
     background-color: #dee2e6;
 } */
 
@@ -253,6 +253,7 @@ a:hover {
     max-width: 350px;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: 5px;
+    background-color: rgb(240, 240, 240);
     /* margin-bottom: 10px; */
 }
 
@@ -298,6 +299,8 @@ a:hover {
 /* How to center a div */
 .box-model {
     display: flex;
+    justify-content: space-between;
+
 }
 
 .box-model > div {
