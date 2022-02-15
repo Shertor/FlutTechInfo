@@ -1,163 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>FlutterMe Info</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div class="container">
-      <div class="block">
-        <div class="info">
-          <img src="resources/icon.png" alt="plate">
-          <div class="info-text">
-            <h1>FlutterMe Project Info Page</h1>
-            <p>
-              Program for solving the plate flutter and plate natural vibration problems
-              <br>
-              Developed by
-              <a href="https://github.com/Shertor" target="_blank">Shertor</a>
-            </p>
-          </div>
-        </div>
-      </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <div class="block">
-        <div class="features">
-          <h2>Features</h2>
-            <div>
-              <h4>Different plate types and boundary conditions</h4>
-              <p>Supports isotropic and orthotropic plates</p>
-              <p>Boundary conditions available: CCCC, SCSC</p>
-            </div>
-            <div>
-              <h4>Calculation of the Eigenvalues</h4>
-              <p>Calculation available for natural vibrations and flutter problems</p>
-            </div>
-            <div>
-              <h4>Calculation of the Critical flutter speed</h4>
-              <p>Calculation available for flutter problems</p>
-            </div>
-            <div>
-              <h4>Visualization of the Real part of the eigenfunction</h4>
-              <p>Calculation available for flutter problems</p>
-            </div>
-        </div>
-      </div>  
-     
-      <div class="block">
-        <h2>Requirements</h2>
-        <ul class="list">
-          <li class="list-item">
-            <a href="https://pypi.org/project/PyQt5/" target="_blank">PyQt5 - Python bindings for the Qt cross platform application toolkit</a>
-          </li>
-          <li class="list-item">
-            <a href="https://pypi.org/project/numpy/" target="_blank">NumPy - the fundamental package for array computing with Python</a>
-          </li>
-        </ul>
-      </div>
-      
-      <div class="block">
-        <h2>Problem Statement</h2>
-        <div class="box-model">
-          <div class="problem-card">
-            <img class="problem-card-img-top" src="resources/icon.png">
-            <div class="problem-card-body">
-              <h5 class="problem-card-title">Natural plate vibrations</h5>
-              <p class="problem-card-text">The plate free vibrations problem is governed by the Germain-Lagrange plate equation. One should apply certain descritisation according to boundary conditions and solve with the Bubnov — Galerkin method</p>
-              <a href="https://en.wikipedia.org/wiki/Vibration_of_plates" class="problem-card-btn">See more</a>
-            </div>
-          </div>
-          <div class="problem-card">
-            <img class="problem-card-img-top" src="resources/icon.png">
-            <div class="problem-card-body">
-              <h5 class="problem-card-title">Plate Flutter</h5>
-              <p class="problem-card-text">For the plate flutter problem, a mathematical model of a plate flutter, constructed by A.A. Ilyushin and I.A. Kiiko, is adopted, which allows taking into account an arbitrary direction of the incoming flow vector.</p>
-              <a href="https://en.wikipedia.org/wiki/Aeroelasticity#Flutter" class="problem-card-btn">See more</a>
-            </div>
-          </div>
-        </div>
-      </div>
+		<!-- ICONS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
 
-      <div class="block">
-        <h2>References</h2>
-        <table class="references">
-          <thead>
-            <tr>
-              <th>Authors</th>
-              <th>Article</th>
-              <th>Year</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Algazin, S.D., Selivanov, I.A.</td>
-              <td>
-                <a target="_blank">PLATE FLUTTER WITH MIXED BOUNDARY CONDITIONS <br>
-                  J Appl Mech Tech Phy</a>
-              </td>
-              <td>soon</td>
-            </tr>
-            <tr>
-              <td>Algazin, S.D., Selivanov, I.A.</td>
-              <td>
-                <a href="https://doi.org/10.1134/S0021894421020073" target="_blank"
-                  >NATURAL VIBRATIONS OF A RECTANGULAR PLATE WITH MIXED BOUNDARY
-                  CONDITIONS. J Appl Mech Tech Phy 62, 238–244</a>
-              </td>
-              <td>2021</td>
-            </tr>
-            <tr>
-              <td>S. Germain</td>
-              <td>
-                Recherches sur la theorie des surfaces elastiques. <br> Mme ve Courcier,
-                Paris
-              </td>
-              <td>1821</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+		<!-- CSS -->
+		<link rel="stylesheet" href="assets/css/styles.css" />
 
-      <!-- <div class="block">
-        <h2>Release Date</h2>
-        <h4>Soon!</h4>
-      </div> -->
+		<title>FlutterMe Info</title>
+	</head>
+	<body>
+		<div class="header">Hello</div>
 
-      <div class="block">
-        <h2>Contact Us</h2>
-        <div class="contact">
-          <form action="mailto:kosscainlain@gmail.com" method="post" enctype="multipart/form-data">
-            <div class="row">
-              <div class="form-group">
-                <label for="name">Your name</label>
-                <input type="text" id="name" , placeholder="Type your name" />
-              </div>
-              <div class="form-group">
-                <label for="email">e-mail</label>
-                <input type="email" id="email" , placeholder="e-mail" />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="text">Your message</label>
-              <textarea name="" id="text" cols="15" rows="2"></textarea>
-            </div>
-            <button type="submit" value="Submit" class="btn">Submit</button>
-            <!-- <input class="btn" type="submit" , value="Submit" /> -->
-          </form>
-  
-          <!-- <div class="position">
-            <div class="box">
-            </div>
-          </div> -->
-        </div>
-      </div>
-      <!-- <div class="box-model">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div> -->
-    </div>
-  </body>
+		<div class="container"></div>
+
+		<div class="footer"></div>
+
+		<script src="assets/js/main.js"></script>
+	</body>
 </html>
