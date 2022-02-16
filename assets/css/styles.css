@@ -382,3 +382,49 @@ img {
 	color: var(--first-color);
 	margin-top: 0.15rem;
 }
+
+/* ===================== TYPES ===================== */
+.types__bg {
+	background-color: var(--first-color);
+	padding: 3rem 2rem 2rem;
+	border-radius: 1rem;
+}
+
+.types__container {
+	gap: 2rem;
+	padding-top: 1rem;
+}
+
+.types__title {
+	color: #fff;
+}
+
+.types__card {
+	background-color: var(--container-color);
+	padding: 2.5rem 3rem 2rem 1.5rem;
+	border-radius: 1rem;
+}
+
+.types__card-number {
+	display: inline-block;
+	background-color: var(--first-color-alt);
+	color: #fff;
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+	font-size: var(--h2-font-size);
+	margin-bottom: var(--mb-2-5);
+	transition: 0.3s;
+}
+
+.types__card-title {
+	font-size: var(--h3-font-size);
+	margin-bottom: var(--mb-1);
+}
+
+.types__card-description {
+	font-size: var(--small-font-size);
+}
+
+.types__card:hover .types__card-number {
+	transform: translateY(-0.25rem);
+}
