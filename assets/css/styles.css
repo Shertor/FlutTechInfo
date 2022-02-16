@@ -233,6 +233,11 @@ img {
 	right: 0;
 }
 
+/* 			change header color */
+.header-scroll {
+	box-shadow: 0 1px 4px hsla(var(--hue), 4%, 15%, 0.1);
+}
+
 /* ===================== HOME =====================*/
 .home {
 	padding: 3.5rem 0 2rem;
