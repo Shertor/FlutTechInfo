@@ -229,5 +229,5 @@ img {
 
 /*          show menu */
 .nav__menu.nav-show {
-	right: 1.25rem;
+	right: 0;
 }

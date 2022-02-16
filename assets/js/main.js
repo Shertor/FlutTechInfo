@@ -14,3 +14,14 @@ if (navClose) {
 		navMenu.classList.remove('nav-show')
 	})
 }
+
+// CLOSE MENU ON MOBILE
+const navLinks = document.querySelectorAll('.nav__link')
+
+if (navLinks) {
+	navLinks.forEach((navItem) => {
+		navItem.addEventListener('click', () => {
+			navMenu.classList.remove('nav-show')
+		})
+	})
+}
