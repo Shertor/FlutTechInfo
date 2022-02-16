@@ -1,18 +1,16 @@
-function toggleMenu() {
-	const navMenu = document.getElementById('nav-menu')
-	navMenu.classList.toggle('nav-show')
+// OPEN SHOW NAVIGATION MENU
+const navMenu = document.getElementById('nav-menu'),
+	navToggle = document.getElementById('nav-toggle'),
+	navClose = document.getElementById('nav-close')
+
+if (navToggle) {
+	navToggle.addEventListener('click', () => {
+		navMenu.classList.add('nav-show')
+	})
 }
 
-function closeMenu() {
-	const navMenu = document.getElementById('nav-menu')
-	console.log('click')
-	if (navMenu.classList.contains('nav-show')) {
-		navMenu.classList.toggle('nav-show')
-	}
+if (navClose) {
+	navClose.addEventListener('click', () => {
+		navMenu.classList.remove('nav-show')
+	})
 }
-
-const navToggle = document.getElementById('nav-toggle')
-navToggle.addEventListener('click', toggleMenu)
-
-const bodyElement = document.querySelector('main')
-bodyElement.addEventListener('click', closeMenu)
