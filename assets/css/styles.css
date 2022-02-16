@@ -560,3 +560,18 @@ img {
 .questions__item:hover {
 	box-shadow: 0 2px 8px hsla(var(--hue), 4%, 15%, 0.15);
 }
+
+.accordion-open .questions__header,
+.accordion-open .questions__content {
+	background-color: var(--first-color);
+}
+
+.accordion-open .questions__item-title,
+.accordion-open .questions__description,
+.accordion-open .questions__icon {
+	color: #fff;
+}
+
+.accordion-open .questions__icon {
+	transform: rotate(45deg);
+}
