@@ -77,7 +77,7 @@ textarea {
 }
 
 body {
-	margin: var(--header-height);
+	margin: var(--header-height) 0 0 0;
 	background-color: var(--body-color);
 	color: var(--text-color);
 }
@@ -174,7 +174,8 @@ img {
 }
 
 .nav__logo-icon {
-	width: 1.5rem;
+	width: 1.15rem;
+	color: var(--first-color);
 }
 
 .nav__logo:hover {
@@ -231,3 +232,5 @@ img {
 .nav__menu.nav-show {
 	right: 0;
 }
+
+/*                          HOME */
