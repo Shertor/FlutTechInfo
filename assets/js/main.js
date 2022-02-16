@@ -9,19 +9,18 @@ if (navToggle) {
 	})
 }
 
+function closeNav() {
+	const navMenu = document.getElementById('nav-menu')
+	navMenu.classList.remove('nav-show')
+}
+
 if (navClose) {
-	navClose.addEventListener('click', () => {
-		navMenu.classList.remove('nav-show')
-	})
+	navClose.addEventListener('click', closeNav)
 }
 
 // CLOSE MENU ON MOBILE
 const navLinks = document.querySelectorAll('.nav__link')
 
 if (navLinks) {
-	navLinks.forEach((navItem) => {
-		navItem.addEventListener('click', () => {
-			navMenu.classList.remove('nav-show')
-		})
-	})
+	navLinks.forEach((navItem) => navItem.addEventListener('click', closeNav))
 }
