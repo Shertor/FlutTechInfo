@@ -428,3 +428,70 @@ img {
 .types__card:hover .types__card-number {
 	transform: translateY(-0.25rem);
 }
+
+/* ===================== ARTICLES ===================== */
+.articles__description {
+	text-align: center;
+}
+
+.articles__container {
+	padding: 3rem 0;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2.5rem 3rem;
+}
+
+.article__card {
+	display: grid;
+	position: relative;
+
+	row-gap: 1.25rem;
+}
+
+.article__img {
+	position: relative;
+	width: 120px;
+	justify-self: center;
+	margin-bottom: var(--mb-0-75);
+	transition: 0.3s;
+}
+
+.article__title,
+.article__year {
+	font-size: var(--small-font-size);
+	font-weight: var(--font-semi-bold);
+	color: var(--title-color);
+}
+
+.article__title {
+	margin-bottom: 0.25rem;
+}
+
+.article__button {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-color: var(--first-color);
+	color: #fff;
+	padding: 0.25rem;
+	border-radius: 0.35rem;
+	font-size: 1.15rem;
+}
+
+.article__button:hover {
+	background-color: var(--first-color-alt);
+}
+
+.article__circle {
+	width: 90px;
+	height: 90px;
+	background-color: var(--first-color-lighten);
+	border-radius: 50%;
+
+	position: absolute;
+	top: 18%;
+	left: 5%;
+}
+
+.article__card:hover .article__img {
+	transform: translateY(-0.5rem);
+}
