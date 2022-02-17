@@ -108,6 +108,31 @@ img {
 	height: auto;
 }
 
+/* ===================== THEME ===================== */
+/* Variables */
+body.dark-theme {
+	--first-color: hsl(var(--hue), 8%, 20%);
+
+	--title-color: hsl(var(--hue), 4%, 95%);
+	--text-color: hsl(var(--hue), 4%, 75%);
+	--body-color: hsl(var(--hue), 8%, 12%);
+	--container-color: hsl(var(--hue), 8%, 16%);
+}
+
+/* Button */
+.change-theme {
+	color: var(--title-color);
+	font-size: 1.15rem;
+	cursor: pointer;
+}
+
+.nav__btns {
+	display: inline-flex;
+	align-items: center;
+
+	column-gap: 0.9rem;
+}
+
 /* ===================== REUSABLE ===================== */
 .section {
 	padding: 5.5rem 0 1rem;

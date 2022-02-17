@@ -101,3 +101,35 @@ window.addEventListener('scroll', () => {
 		scrollTop.classList.remove('show-scroll')
 	}
 })
+
+// ===================== THEME CHANGE =====================
+
+const themeBtn = document.getElementById('theme-button')
+
+const darkTheme = 'dark-theme'
+const darkIcon = 'ri-sun-line'
+
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+const isCurrentThemeDark = () =>
+	document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const isCurrentIconDark = () =>
+	themeBtn.classList.contains(darkIcon) ? 'ri-sun-line' : 'ri-contrast-2-line'
+
+if (selectedTheme) {
+	document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](
+		darkTheme
+	)
+	themeBtn.classList[selectedIcon === 'ri-sun-line' ? 'add' : 'remove'](
+		darkIcon
+	)
+}
+
+themeBtn.addEventListener('click', () => {
+	document.body.classList.toggle(darkTheme)
+	themeBtn.classList.toggle(darkIcon)
+
+	localStorage.setItem('selected-theme', isCurrentThemeDark)
+	localStorage.setItem('selected-icon', isCurrentIconDark)
+})
