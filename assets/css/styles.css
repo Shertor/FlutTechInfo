@@ -657,3 +657,35 @@ img {
 	color: var(--text-color-light);
 	margin: 5rem 0 1rem;
 }
+
+/* ===================== SCROLL UP =====================*/
+.scrolltop {
+	position: fixed;
+	right: 1rem;
+	bottom: 2.5rem;
+
+	display: inline-flex;
+
+	justify-content: center;
+	align-items: center;
+
+	background-color: var(--first-color);
+	opacity: 0.8;
+
+	border-radius: 0.24rem;
+	padding: 0.4rem;
+
+	z-index: var(--z-tooltip);
+
+	transition: 0.4s;
+}
+
+.scrolltop .scrolltop__icon {
+	font-size: 1rem;
+	color: #fff;
+}
+
+.scrolltop:hover {
+	background-color: var(--first-color-alt);
+	opacity: 1;
+}
