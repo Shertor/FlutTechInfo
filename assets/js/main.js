@@ -91,3 +91,13 @@ function scrollActive() {
 }
 
 window.addEventListener('scroll', scrollActive)
+
+// ===================== SCROLL UP BUTTON =====================
+window.addEventListener('scroll', () => {
+	const scrollTop = document.getElementById('scroll-top')
+	if (this.scrollY > 100) {
+		scrollTop.classList.add('show-scroll')
+	} else {
+		scrollTop.classList.remove('show-scroll')
+	}
+})

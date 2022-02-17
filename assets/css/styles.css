@@ -662,7 +662,7 @@ img {
 .scrolltop {
 	position: fixed;
 	right: 1rem;
-	bottom: 2.5rem;
+	bottom: -20%;
 
 	display: inline-flex;
 
@@ -678,6 +678,8 @@ img {
 	z-index: var(--z-tooltip);
 
 	transition: 0.4s;
+
+	visibility: hidden;
 }
 
 .scrolltop .scrolltop__icon {
@@ -688,4 +690,9 @@ img {
 .scrolltop:hover {
 	background-color: var(--first-color-alt);
 	opacity: 1;
+}
+
+.show-scroll {
+	visibility: visible;
+	bottom: 2.5rem;
 }
