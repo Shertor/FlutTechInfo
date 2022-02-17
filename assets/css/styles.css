@@ -696,3 +696,13 @@ img {
 	visibility: visible;
 	bottom: 2.5rem;
 }
+
+/* ===================== SCROLL BAR =====================*/
+::-webkit-scrollbar {
+	width: 0.7rem;
+	background: hsl(var(--hue), 4%, 53%);
+}
+
+::-webkit-scrollbar-thumb {
+	background: hsl(var(--hue), 4%, 29%);
+}
