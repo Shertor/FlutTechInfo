@@ -703,6 +703,16 @@ body.dark-theme {
 	transform: translateY(-0.25rem);
 }
 
+.footer__developed-with__item {
+	display: inline-flex;
+	align-items: center;
+	column-gap: 0.25rem;
+}
+
+.footer__developed-with__icon {
+	font-size: 1.15rem;
+}
+
 .footer__copy {
 	text-align: center;
 	font-size: var(--smaller-font-size);

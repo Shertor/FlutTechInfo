@@ -10,6 +10,11 @@
 			rel="stylesheet"
 		/>
 
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+		/>
+
 		<!-- ===================== CSS ===================== -->
 		<link rel="stylesheet" href="assets/css/styles.css" />
 
@@ -229,6 +234,7 @@
 							href="https://doi.org/10.1134/S0021894421020073"
 							target="_blank"
 							class="button--flex article__button"
+							title="View article"
 						>
 							<i class="ri-article-line"></i>
 						</a>
@@ -257,6 +263,7 @@
 							href="http://gosniiga.ru/wp-content/uploads/2020/09/Nauchnyj-vestnik-GosNII-GA-31.pdf"
 							target="_blank"
 							class="button--flex article__button"
+							title="View article"
 						>
 							<i class="ri-article-line"></i>
 						</a>
@@ -275,15 +282,35 @@
 						<div class="questions__item">
 							<header class="questions__header">
 								<i class="ri-add-line questions__icon"></i>
-								<h3 class="questions__item-title">Some question?</h3>
+								<h3 class="questions__item-title">Are results verified?</h3>
 							</header>
 
 							<div class="questions__content">
-								<p class="questions__description">Some answer</p>
+								<p class="questions__description">
+									All mathematical models and numerical algorithms published in
+									science journals with comparison to known results and error
+									estimation
+								</p>
 							</div>
 						</div>
 
 						<div class="questions__item">
+							<header class="questions__header">
+								<i class="ri-add-line questions__icon"></i>
+								<h3 class="questions__item-title">
+									Can I view articles without buying them?
+								</h3>
+							</header>
+
+							<div class="questions__content">
+								<p class="questions__description">
+									You can request preprints of some articles by sending a
+									message to us
+								</p>
+							</div>
+						</div>
+
+						<!-- <div class="questions__item">
 							<header class="questions__header">
 								<i class="ri-add-line questions__icon"></i>
 								<h3 class="questions__item-title">Some question?</h3>
@@ -292,33 +319,38 @@
 							<div class="questions__content">
 								<p class="questions__description">Some answer</p>
 							</div>
-						</div>
-
-						<div class="questions__item">
-							<header class="questions__header">
-								<i class="ri-add-line questions__icon"></i>
-								<h3 class="questions__item-title">Some question?</h3>
-							</header>
-
-							<div class="questions__content">
-								<p class="questions__description">Some answer</p>
-							</div>
-						</div>
+						</div> -->
 					</div>
 
 					<div class="questions__group">
 						<div class="questions__item">
 							<header class="questions__header">
 								<i class="ri-add-line questions__icon"></i>
-								<h3 class="questions__item-title">Some question?</h3>
+								<h3 class="questions__item-title">When is the release?</h3>
 							</header>
 
 							<div class="questions__content">
-								<p class="questions__description">Some answer</p>
+								<p class="questions__description">
+									We are constantly working to release software as soon as
+									possible!
+								</p>
 							</div>
 						</div>
 
 						<div class="questions__item">
+							<header class="questions__header">
+								<i class="ri-add-line questions__icon"></i>
+								<h3 class="questions__item-title">Is it free?</h3>
+							</header>
+
+							<div class="questions__content">
+								<p class="questions__description">
+									Software is completely free for non commercial use
+								</p>
+							</div>
+						</div>
+
+						<!-- <div class="questions__item">
 							<header class="questions__header">
 								<i class="ri-add-line questions__icon"></i>
 								<h3 class="questions__item-title">Some question?</h3>
@@ -327,18 +359,7 @@
 							<div class="questions__content">
 								<p class="questions__description">Some answer</p>
 							</div>
-						</div>
-
-						<div class="questions__item">
-							<header class="questions__header">
-								<i class="ri-add-line questions__icon"></i>
-								<h3 class="questions__item-title">Some question?</h3>
-							</header>
-
-							<div class="questions__content">
-								<p class="questions__description">Some answer</p>
-							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</section>
@@ -362,7 +383,8 @@
 							href="mailto:expample@gmail.com"
 							target="_blank"
 							class="button button--flex footer__button"
-							>Subscribe <i class="ri-arrow-right-s-line button__icon"></i
+							title="Send email"
+							>Send a message <i class="ri-arrow-right-s-line button__icon"></i
 						></a>
 					</div>
 				</div>
@@ -371,10 +393,10 @@
 					<h3 class="footer__title">Our Address</h3>
 
 					<ul class="footer__data">
-						<li class="footer__information">Moscow, Russia</li>
 						<li class="footer__information">
 							Lomonosov Moscow State University
 						</li>
+						<li class="footer__information">Moscow, Russia</li>
 					</ul>
 				</div>
 
@@ -399,11 +421,16 @@
 				</div>
 
 				<div class="footer__content">
-					<h3 class="footer__title">Our Address</h3>
+					<h3 class="footer__title">Developed with</h3>
 
 					<ul class="footer__data">
-						<li class="footer__information">Moscow, Russia</li>
-						<li class="footer__information">expample@gmail.com</li>
+						<li class="footer__developed-with__item">
+							<i class="bx bxl-python"></i> Python
+						</li>
+						<li class="footer__developed-with__item">Intel Fortran</li>
+						<li class="footer__developed-with__item">
+							<i class="bx bxl-github"></i> GitHub
+						</li>
 					</ul>
 				</div>
 			</div>
