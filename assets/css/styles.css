@@ -80,6 +80,8 @@ body {
 	margin: var(--header-height) 0 0 0;
 	background-color: var(--body-color);
 	color: var(--text-color);
+
+	transition: 0.4s;
 }
 
 button {
@@ -111,7 +113,7 @@ img {
 /* ===================== THEME ===================== */
 /* Variables */
 body.dark-theme {
-	--first-color: hsl(var(--hue), 8%, 20%);
+	--first-color-dark: hsl(var(--hue), 8%, 20%);
 
 	--title-color: hsl(var(--hue), 4%, 95%);
 	--text-color: hsl(var(--hue), 4%, 75%);
@@ -124,6 +126,7 @@ body.dark-theme {
 	color: var(--title-color);
 	font-size: 1.15rem;
 	cursor: pointer;
+	visibility: hidden;
 }
 
 .nav__btns {
@@ -131,6 +134,28 @@ body.dark-theme {
 	align-items: center;
 
 	column-gap: 0.9rem;
+}
+
+.dark-theme .types__bg,
+.dark-theme .questions {
+	background-color: var(--first-color-dark);
+}
+
+.dark-theme .article__circle {
+	background-color: var(--container-color);
+}
+
+.dark-theme .header-scroll {
+	box-shadow: 0 1px 4px hsla(var(--hue), 4%, 4%, 0.3);
+}
+
+.dark-theme .home__social-link,
+.dark-theme .home__social-follow {
+	color: #fff;
+}
+
+.dark-theme .home__social-follow::after {
+	background-color: #fff;
 }
 
 /* ===================== REUSABLE ===================== */
@@ -172,6 +197,8 @@ body.dark-theme {
 	top: 0;
 	left: 0;
 	z-index: var(--z-fixed);
+
+	transition: 0.4s;
 }
 
 /* ===================== NAVIGATION ===================== */
