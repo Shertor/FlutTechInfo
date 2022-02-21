@@ -256,7 +256,7 @@ body.dark-theme {
 	}
 
 	.nav__wrapper {
-		background-color: hsla(var(--hue), 24%, 15%, 0.1);
+		background-color: hsla(var(--hue), 24%, 15%, 0.5);
 		position: fixed;
 		top: 0;
 		width: 100%;
