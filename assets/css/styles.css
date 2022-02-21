@@ -282,7 +282,12 @@ body.dark-theme {
 
 /*          show menu */
 .nav__menu.nav-show {
+	overflow: auto;
 	right: 0;
+}
+
+.main.main-hidden{
+	overflow: hidden;
 }
 
 /* 			change header color */

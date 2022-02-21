@@ -1,17 +1,20 @@
 // ===================== OPEN SHOW NAVIGATION MENU =====================
 const navMenu = document.getElementById('nav-menu'),
 	navToggle = document.getElementById('nav-toggle'),
-	navClose = document.getElementById('nav-close')
+	navClose = document.getElementById('nav-close'),
+	main = document.querySelector('.main')
 
 if (navToggle) {
 	navToggle.addEventListener('click', () => {
 		navMenu.classList.add('nav-show')
+		main.classList.add('.main-hidden')
 	})
 }
 
 function closeNav() {
 	const navMenu = document.getElementById('nav-menu')
 	navMenu.classList.remove('nav-show')
+	main.classList.remove('.main-hidden')
 }
 
 if (navClose) {
