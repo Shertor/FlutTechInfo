@@ -2,23 +2,34 @@
 const navMenu = document.getElementById('nav-menu'),
 	navToggle = document.getElementById('nav-toggle'),
 	navClose = document.getElementById('nav-close'),
-	main = document.querySelector('.main')
+	body = document.getElementById('body'),
+	navWrapper = document.getElementById('nav-wrapper')
 
 if (navToggle) {
 	navToggle.addEventListener('click', () => {
+		navWrapper.classList.add('naw__wrapper-show')
 		navMenu.classList.add('nav-show')
-		main.classList.add('.main-hidden')
+		body.classList.add('body-hidden')
 	})
 }
 
 function closeNav() {
-	const navMenu = document.getElementById('nav-menu')
 	navMenu.classList.remove('nav-show')
-	main.classList.remove('.main-hidden')
+	body.classList.remove('body-hidden')
+	navWrapper.classList.remove('naw__wrapper-show')
 }
 
 if (navClose) {
 	navClose.addEventListener('click', closeNav)
+}
+
+// ===================== CLOSE MENU ON CLICK =====================
+navWrapper.addEventListener('click', closeThis)
+
+function closeThis(event) {
+	if (event.eventPhase === 2) {
+		closeNav()
+	}
 }
 
 // ===================== CLOSE MENU ON MOBILE =====================
