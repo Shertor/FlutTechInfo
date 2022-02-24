@@ -108,15 +108,17 @@ function scrollActive() {
 window.addEventListener('scroll', scrollActive)
 
 // ===================== SCROLL UP BUTTON =====================
+const scrollTop = document.getElementById('scroll-top')
 window.addEventListener('scroll', () => {
-	const scrollTop = document.getElementById('scroll-top')
 	if (this.scrollY > 100) {
 		scrollTop.classList.add('show-scroll')
 	} else {
 		scrollTop.classList.remove('show-scroll')
 	}
 })
-
+scrollTop.addEventListener('click', () => {
+	window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+})
 // ===================== THEME CHANGE =====================
 
 const themeBtn = document.getElementById('theme-button')
