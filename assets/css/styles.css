@@ -240,7 +240,7 @@ body.dark-theme {
 	cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 790px) {
 	.nav__menu {
 		position: absolute;
 		background-color: var(--container-color);
@@ -397,6 +397,16 @@ body.dark-theme {
 	transform: translateX(0.25rem);
 }
 
+.language-container{
+	display: inline-flex;
+	align-items: center;
+	column-gap: 0.15rem;
+}
+
+.button--link.language-active {
+	font-weight: var(--font-semi-bold);
+}
+
 /* ===================== BUTTONS ===================== */
 .button {
 	display: inline-block;
@@ -434,7 +444,6 @@ body.dark-theme {
 .button--link:hover .button__icon {
 	transform: translateX(0.25rem);
 }
-
 /* ===================== ABOUT ===================== */
 .about__container {
 	row-gap: 2rem;
@@ -836,7 +845,7 @@ body.dark-theme {
 	}
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 790px) {
 	body {
 		margin: 0;
 	}
