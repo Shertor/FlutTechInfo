@@ -302,7 +302,11 @@ body.dark-theme {
 }
 
 .body.body-hidden {
+	touch-action: none;
+	-webkit-overflow-scrolling: none;
 	overflow: hidden;
+
+	overscroll-behavior: none;
 }
 
 /* 			change header color */
