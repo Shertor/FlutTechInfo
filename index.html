@@ -32,19 +32,19 @@
 					<div class="nav__menu" id="nav-menu">
 						<ul class="nav__list">
 							<li class="nav__item">
-								<a href="#home" class="nav__link active-link">Home</a>
+								<a data-goto=".home" href="#" class="nav__link active-link">Home</a>
 							</li>
 							<li class="nav__item">
-								<a href="#about" class="nav__link">About</a>
+								<a data-goto=".about" href="#" class="nav__link">About</a>
 							</li>
 							<li class="nav__item">
-								<a href="#articles" class="nav__link">Articles</a>
+								<a data-goto=".articles" href="#" class="nav__link">Articles</a>
 							</li>
 							<li class="nav__item">
-								<a href="#faq" class="nav__link">FAQs</a>
+								<a data-goto=".questions" href="#" class="nav__link">FAQs</a>
 							</li>
 							<li class="nav__item">
-								<a href="#contact" class="nav__link">Contact Us</a>
+								<a data-goto=".footer" href="#" class="nav__link">Contact Us</a>
 							</li>
 						</ul>
 						<div class="nav__close" id="nav-close">
@@ -80,7 +80,7 @@
 						<p class="home__description">
 							Make your research and studies better.
 						</p>
-						<a href="#about" class="button button--flex">
+						<a href="#" class="button button--flex" id="goto-about">
 							Explore <i class="ri-arrow-right-s-line button__icon"></i>
 						</a>
 					</div>
@@ -156,7 +156,7 @@
 							</p>
 						</div>
 
-						<a href="#contact" class="button--link button--flex">
+						<a href="#contact" class="button--link button--flex" id="goto-footer"> 
 							Subscribe to newsletter
 							<i class="ri-arrow-right-s-line button__icon"></i>
 						</a>
@@ -276,7 +276,7 @@
 			</section>
 
 			<!-- ===================== FAQ ===================== -->
-			<section class="questions section" id="faq">
+			<section class="questions section" id="questions">
 				<h2 class="section__title-center questions__title container">
 					Some common questions
 				</h2>
@@ -370,7 +370,7 @@
 		</div>
 
 		<!-- ===================== FOOTER ===================== -->
-		<section class="footer section" id="contact">
+		<section class="footer section" id="footer">
 			<div class="footer__container container grid">
 				<div class="footer__content">
 					<a href="#" class="footer__logo">

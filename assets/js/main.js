@@ -1,3 +1,41 @@
+// ===================== NAVIGATION =====================
+const navItems = document.querySelectorAll('.nav__link[data-goto]')
+if (navItems.length > 0) {
+	navItems.forEach(item => {
+		item.addEventListener('click', onNavItemClick)
+	})
+
+	function onNavItemClick(event) {
+		const navItem = event.target
+		if (navItem.dataset.goto && document.querySelector(navItem.dataset.goto)) {
+			const gotoBlock = document.querySelector(navItem.dataset.goto);
+			const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight
+			window.scrollTo({
+				top: gotoBlockValue,
+				behavior: "smooth"
+			})
+			event.preventDefault()
+		}
+	}
+}
+
+const gotoAboutBtn = document.getElementById('goto-about')
+gotoAboutBtn.addEventListener('click', (event) => {
+	event.preventDefault()
+	const aboutSection = document.getElementById('about')
+	window.scrollTo({
+		top: aboutSection.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight
+	})
+})
+
+const gotoFooterBtn = document.getElementById('goto-footer')
+gotoFooterBtn.addEventListener('click', (event) => {
+	event.preventDefault()
+	const aboutSection = document.getElementById('footer')
+	window.scrollTo({
+		top: aboutSection.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight
+	})
+})
 // ===================== OPEN SHOW NAVIGATION MENU =====================
 const navMenu = document.getElementById('nav-menu'),
 	navToggle = document.getElementById('nav-toggle'),
@@ -95,11 +133,11 @@ function scrollActive() {
 
 		if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
 			document
-				.querySelector('.nav__menu a[href*=' + sectionId + ']')
+				.querySelector('.nav__link[data-goto=".' + sectionId + '"]')
 				.classList.add('active-link')
 		} else {
 			document
-				.querySelector('.nav__menu a[href*=' + sectionId + ']')
+				.querySelector('.nav__link[data-goto=".' + sectionId + '"]')
 				.classList.remove('active-link')
 		}
 	})
