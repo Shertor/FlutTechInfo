@@ -254,6 +254,7 @@ body.dark-theme {
 		border-radius: 1rem 0 0 1rem;
 		transition: 0.3s;
 		z-index: var(--z-fixed);
+		overflow: auto;
 	}
 
 	.nav__wrapper {
@@ -266,6 +267,11 @@ body.dark-theme {
 		z-index: calc(var(--z-fixed) - 1);
 		overflow-y: auto;
 	}
+
+	.nav__item:last-child {
+		margin-bottom: 1.5rem;
+	}
+
 }
 
 .nav__close {
