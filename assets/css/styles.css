@@ -651,6 +651,8 @@ body.dark-theme {
 	display: grid;
 	position: relative;
 
+	grid-template-rows: min-content;
+
 	row-gap: 1.25rem;
 }
 
@@ -659,6 +661,10 @@ body.dark-theme {
 	position: relative;
 	width: 120px;
 	justify-self: center;
+}
+
+.article__img-link{
+	height: fit-content;
 }
 
 .article__img {
@@ -673,8 +679,12 @@ body.dark-theme {
 	color: var(--title-color);
 }
 
-.article__title {
-	margin-bottom: 0.25rem;
+.article__description {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.25rem;
+	justify-content: space-between;
+	padding-right: 1.75rem;
 }
 
 .article__button {
