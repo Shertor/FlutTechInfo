@@ -19,6 +19,7 @@ if (navItems.length > 0) {
 	}
 }
 
+// переход к разделу About
 const gotoAboutBtn = document.getElementById('goto-about')
 gotoAboutBtn.addEventListener('click', (event) => {
 	event.preventDefault()
@@ -28,6 +29,7 @@ gotoAboutBtn.addEventListener('click', (event) => {
 	})
 })
 
+// переход к разделу Footer
 const gotoFooterBtn = document.getElementById('goto-footer')
 gotoFooterBtn.addEventListener('click', (event) => {
 	event.preventDefault()
@@ -36,6 +38,24 @@ gotoFooterBtn.addEventListener('click', (event) => {
 		top: aboutSection.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight
 	})
 })
+
+
+// открытие подменю
+
+const navArrows = document.querySelectorAll('.button--nav')
+
+if (navArrows) {
+	navArrows.forEach(item => {
+		item.addEventListener('click', ()=>{
+			const navItem = item.parentElement.parentElement
+			navItem.classList.toggle('show-sub-nav')
+		})
+	})
+}
+
+
+
+
 // ===================== OPEN SHOW NAVIGATION MENU =====================
 const navMenu = document.getElementById('nav-menu'),
 	navToggle = document.getElementById('nav-toggle'),
