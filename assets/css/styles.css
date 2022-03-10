@@ -241,7 +241,11 @@ body.dark-theme {
 	cursor: pointer;
 }
 
-@media screen and (max-width: 790px) {
+.nav__menu {
+	padding: 5px, 0;
+}
+
+@media screen and (max-width: 789px) {
 	.nav__menu {
 		position: absolute;
 		background-color: var(--container-color);
@@ -286,6 +290,8 @@ body.dark-theme {
 	display: flex;
 	flex-direction: column;
 	row-gap: 1.5rem;
+
+	flex-wrap: wrap;
 }
 
 .nav__link {
