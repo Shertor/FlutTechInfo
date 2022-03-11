@@ -246,7 +246,7 @@ body.dark-theme {
 }
 
 
-@media screen and (max-width: 789px) {
+@media screen and (max-width: 768px) {
 	.nav__menu {
 		position: absolute;
 		background-color: var(--container-color);
@@ -962,7 +962,7 @@ body.dark-theme {
 	}
 }
 
-@media screen and (min-width: 790px) {
+@media screen and (min-width: 769px) {
 	body {
 		margin: 0;
 	}
