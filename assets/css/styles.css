@@ -333,6 +333,8 @@ body.dark-theme {
 	opacity: 0;
 	visibility: hidden;
 
+	z-index: var(--z-tooltip);
+
 	/* transition: .3s; */
 
 	pointer-events: none;
