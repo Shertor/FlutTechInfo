@@ -152,13 +152,15 @@ function scrollActive() {
 			sectionId = current.getAttribute('id')
 
 		if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-			document
-				.querySelector('.nav__link[data-goto=".' + sectionId + '"]')
-				.classList.add('active-link')
+			const link = document.querySelector('.nav__link[data-goto=".' + sectionId + '"]')
+			if (link) {
+				link.classList.add('active-link')
+			}
 		} else {
-			document
-				.querySelector('.nav__link[data-goto=".' + sectionId + '"]')
-				.classList.remove('active-link')
+			const link = document.querySelector('.nav__link[data-goto=".' + sectionId + '"]')
+			if (link){
+				link.classList.remove('active-link')
+			}
 		}
 	})
 }
@@ -208,3 +210,32 @@ themeBtn.addEventListener('click', () => {
 	localStorage.setItem('selected-theme', isCurrentThemeDark)
 	localStorage.setItem('selected-icon', isCurrentIconDark)
 })
+
+// ===================== ЗАПОЛНЕНИЕ ТАБЛИЦЫ =====================
+
+function getDataToInsert() {
+	
+	const literatureTrOpen = '<tr class="literature__tr">'
+	const literatureColumnOpen = '<td class="literature__td">'
+	const literatureColumnClose = '</td>'
+	const literatureTrClose = '</tr>'
+	
+	data = [
+		{author: 'Test', article: 'TestName', year: 1964}
+	]
+	
+	let dataToInsert = literatureTrOpen
+	
+	data.forEach((item) => {
+		const keys = Object.keys(item)
+		keys.forEach((key) => {
+			dataToInsert += literatureColumnOpen + `${item[key]}` + literatureColumnClose
+		})
+	})
+
+	dataToInsert += literatureTrClose
+
+	return dataToInsert
+}
+const literatureDataElement = document.getElementById('literature-data')
+literatureDataElement.insertAdjacentHTML('beforeend', getDataToInsert())
