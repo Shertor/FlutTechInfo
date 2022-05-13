@@ -1,0 +1,29 @@
+{
+	"articles": [
+		{
+			"author": "Eisenberger M., Deutsch A.",
+			"article": "Solution of thin rectangular plate vibrations for all combinations of boundary conditions",
+			"year": 2019
+		},
+		{
+			"author": "Gorman D. J.",
+			"article": " Free vibration analysis of rectangular plates",
+			"year": 1982
+		},
+		{
+			"author": "Leissa A. W.",
+			"article": "The free vibration of rectangular plates",
+			"year": 1973
+		},
+		{
+			"author": "Germain S.",
+			"article": "Recherches sur la theorie des surfaces elastiques",
+			"year": 1821
+		},
+		{
+			"author": "Xing Y.F., Liu B.",
+			"article": "New exact solutions for free vibrations of thin orthotropic rectangular plates",
+			"year": 2009
+		}
+	]
+}
