@@ -1,4 +1,4 @@
 # FluttMeInfo
 Site for FluttMe Project
 
-https://shertor.github.io/FlutterMeInfo/
+https://shertor.github.io/FluttMeInfo/
